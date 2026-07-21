@@ -1,0 +1,53 @@
+.widget {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.controls {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+.filterInput {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  background-color: var(--surface-color);
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.filterInput:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+}
+
+.error {
+  background-color: #fef2f2;
+  color: var(--error-color);
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
